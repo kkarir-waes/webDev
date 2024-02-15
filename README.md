@@ -10,7 +10,7 @@ This is a new repo, created for sample code related to website development.This 
 
 Enjoy!
 
-</hr>
+<hr>
 
 ## How-To
 
