@@ -14,7 +14,17 @@ Enjoy!
 
 ## How-To
 
-Folder of code snippets showing basic code to do a particular thing. Where related HTML, CSS and JavaScript code will be placed in th esame file, or separated in to files with the same name, but different extensions.
+Folder of code snippets showing basic code to do a particular thing.
+
+Related HTML, CSS and JavaScript code will be placed in the same source file, or it may be separated in to files with the same name, but different extensions.
 
 **for example**
-`hambergerMenu.html hamberger.css hamberger.js`
+`hamberger.html hamberger.css hamberger.js`
+
+## Dev Zone
+
+This is a folder of code being developed and tested. It may or work as expected so use it with caution.
+
+## Game Zone
+
+This contains simple games to demonstrate play-canvas areas, event handlers, key handlers etc
