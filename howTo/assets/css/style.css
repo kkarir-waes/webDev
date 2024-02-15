@@ -14,46 +14,11 @@ code {
   font-size: larger;
 }
 
-/* style <header> to be fixed at the top of the page */
-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0px;
-  background-color: slategray;
-  color: aliceblue;
-  text-align: center;
-  vertical-align: top;
-}
-
-main {
-  margin-top: 5em;
-  width: 100%;
-  left: 0;
-  background-color: whitesmoke;
-}
-/* style the <footer> to be fixed at the page bottom. */
-
-footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  background-color: slategray;
-  color: aliceblue;
-  text-align: center;
-  vertical-align: top;
-}
-
 /* style the DIV that shows the HTML code */
 .coding {
   margin-left: 100px;
   margin-right: 100px;
   background-color: rgb(191, 238, 222);
-  color: black;
 }
 
 /* style the DIV that shows the resulting output from the HTML code */
@@ -61,5 +26,4 @@ footer {
   margin-left: 100px;
   margin-right: 100px;
   background-color: rgb(191, 238, 222);
-  color: black;
 }

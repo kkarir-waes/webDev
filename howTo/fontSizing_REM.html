@@ -1,0 +1,62 @@
+<!-- Use rem units to create three boxes of the correct height -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Using REM</title>
+
+    <style>
+      div {
+        border: 1px solid black;
+        margin-bottom: 5px;
+      }
+
+      .rembox1 {
+        height: 5rem;
+        width: 5rem;
+        background: lightcoral;
+      }
+
+      .rembox2 {
+        height: 10rem;
+        width: 10rem;
+        background: lightseagreen;
+      }
+
+      .rembox3 {
+        height: 20rem;
+        width: 20rem;
+        background: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- insert standard header -->
+    <embed type="text/html" src="assets/resources/header.html" width="100%" />
+
+    <main>
+      <h1>Font Sizing with REM</h1>
+      <h3>Default font-size of 1 REM = 16px.</h3>
+      <p>So, 1.5EM = 16px * 1.5 = 24px</p>
+      <p>
+        EM is relative to the current 'scope', if current is 24px, then 1 EM =
+        24px REM
+      </p>
+
+      <div class="rembox1">
+        <p>5 rem = 80 x 80 pixels</p>
+      </div>
+      <div class="rembox2">
+        <p>10 rem = 160 x 160 pixels</p>
+      </div>
+      <div class="rembox3">
+        <p>20 rem = 320 x 320 pixels</p>
+      </div>
+    </main>
+
+    <!-- insert standard footer -->
+    <embed type="text/html" src="assets/resources/footer.html" width="100%" />
+  </body>
+</html>

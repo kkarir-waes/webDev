@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Gradient Fill</title>
+
+    <style>
+      code {
+        font-size: larger;
+        font-weight: bold;
+      }
+
+      div {
+        height: 200px;
+        width: 500px;
+      }
+
+      #div1 {
+        background-image: linear-gradient(red, yellow);
+      }
+
+      #div2 {
+        background-image: linear-gradient(to right, red, yellow);
+      }
+
+      #div3 {
+        background-image: linear-gradient(to left bottom, red, yellow);
+      }
+
+      #div4 {
+        background-image: linear-gradient(to right bottom, red, yellow);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- insert standard header -->
+    <embed type="text/html" src="assets/resources/header.html" width="100%" />
+
+    <main>
+      <h1>Gradient Fill Backgrounds</h1>
+      <p>Gradient fill <code>body</code> to fill the whole page.</p>
+
+      <div id="div1"><h3>Linear fill, defaults top to bottom</h3></div>
+      <div id="div2"><h3>Linear fill, set to go left to right</h3></div>
+      <div id="div3">
+        <h3>Linear fill, set to go top right to bottom left corner</h3>
+      </div>
+      <div id="div4">
+        <h3>Linear fill, set to go top left to bottom right corner</h3>
+      </div>
+
+      <!-- insert standard footer -->
+      <embed type="text/html" src="assets/resources/footer.html" width="100%" />
+    </main>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Font Sizign with EM</title>
+    <style>
+      body {
+        font-size: 16px;
+      }
+      .normal {
+        background-color: palegreen;
+        font-size: 1em;
+        padding: 5px;
+      }
+
+      .wrapper {
+        background-color: palevioletred;
+        font-size: 1.25em;
+        padding: 5px;
+      }
+
+      .inner {
+        font-size: 1.25em;
+        background-color: paleturquoise;
+
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- insert standard header -->
+    <embed type="text/html" src="assets/resources/header.html" width="100%" />
+
+    <h1>Font Sizing with EM</h1>
+
+    <main>
+      <h3>
+        The default font size here is set to 16px. Other fonts are then sized
+        relative to this 16px
+      </h3>
+
+      <div class="normal">
+        This outer div has a font-size of 16px
+        <div class="wrapper">
+          <!-- Box element inherited 16px as a base value from the body element. 
+          That is why it has font-size equal to 20px:  1.25 * 16 = 20px-->
+          This div has a font-size of 20px (16px * 1.25em = 20px)
+
+          <div class="box">
+            <div class="inner">
+              <!-- We expect inner div to have font-size same as the wrapper because they have same value 1.25em. But the inner div has inherited font-size from
+        the parent box element: 16 * 1.25 * 1.25 = 25px -->
+              This inner div has a font-size of 25px (16px * 1.25 * 1.25 = 25px)
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- insert standard footer -->
+    <embed type="text/html" src="assets/resources/footer.html" width="100%" />
+  </body>
+</html>
