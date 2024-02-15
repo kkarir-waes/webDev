@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dropdown Datalist</title>
+  </head>
+
+  <body>
+    <!-- insert standard header -->
+    <embed type="text/html" src="assets/resources/header.html" width="100%" />
+
+    <main>
+      <h1>Drop Down Data Set</h1>
+      <h3>Many thanks to Code Institue for the back-end server response!</h3>
+
+      <form method="post" action="https://formdump.codeinstitute.net/">
+        <label for="favorite-color">What's your favorite color?</label>
+        <input type="text" id="favorite-color" list="colors" name="fav-color" />
+        <datalist id="colors">
+          <option value="Red"></option>
+          <option value="Green"></option>
+          <option value="Blue"></option>
+          <option value="Orange"></option>
+          <option value="Yellow"></option>
+          <option value="Black"></option>
+        </datalist>
+        <input type="submit" />
+      </form>
+    </main>
+    <!-- insert standard footer -->
+    <embed type="text/html" src="assets/resources/footer.html" width="100%" />
+  </body>
+</html>
