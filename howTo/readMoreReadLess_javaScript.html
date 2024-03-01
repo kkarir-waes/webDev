@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- insert standard <head></head> -->
+    <embed type="text/html" src="/assets/resources/head.html" height="0px" />
+
+    <style>
+      /* initialy hide the MORE button */
+      #more {
+        display: none;
+      }
+    </style>
+
+    <script>
+      /* JavaScript to control the READ MORE / READ LESS */
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- insert standard header -->
+    <embed type="text/html" src="assets/resources/header.html" width="100%" />
+
+    <main>
+      <h2>The standard Lorem Ipsum passage,</h2>
+      <p>
+        <span id="dots">...</span>
+        <span id="more">
+          <!-- insert lorem ipsum text -->
+          <embed
+            type="text/html"
+            src="assets/resources/loremIpsum.html"
+            width="100%" />
+        </span>
+      </p>
+
+      <!-- on clicking the button, run the JavaScript function 'MyFunction' above -->
+      <button onclick="myFunction()" id="myBtn">Read more</button>
+    </main>
+
+    <!-- insert standard footer -->
+    <embed type="text/html" src="assets/resources/footer.html" width="100%" />
+  </body>
+</html>

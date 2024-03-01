@@ -10,7 +10,7 @@ pre {
 
 /* Style <code> with a background color and larger font size */
 code {
-  background-color: palegoldenrod;
+  background-color: paleturquoise;
   font-size: larger;
 }
 
@@ -26,4 +26,16 @@ code {
   margin-left: 100px;
   margin-right: 100px;
   background-color: rgb(191, 238, 222);
+}
+
+/* style the Heading and Nav bar to stay at the top of the page */
+#fixedNav {
+  text-align: left;
+  border: 1px solid blue;
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+  top: 0px;
+  left: 1px;
+  background-color: palevioletred;
 }
