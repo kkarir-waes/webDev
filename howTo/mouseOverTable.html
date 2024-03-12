@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- insert standard <head></head> -->
+    <embed type="text/html" src="/assets/resources/head.html" height="0px" />
+    <style></style>
+  </head>
+
+  <body>
+    <!-- insert standard header -->
+    <embed type="text/html" src="assets/resources/header.html" width="100%" />
+
+    <main>
+      <h1>MouseOver Example</h1>
+
+      <h2>Move the mouse over any image</h2>
+
+      <!-- note the use of double and single quotes in the image names i.e. " '....' "  -->
+      <img
+        src="assets/images/landscape_tiny.PNG"
+        onmouseover="this.src='assets/images/landscape.png'"
+        onmouseout="this.src='assets/images/landscape_tiny.png'" />
+
+      <h1>Table Gallery</h1>
+
+      <table border="2">
+        <caption>
+          Gallery
+        </caption>
+        <tr>
+          <td>
+            <img
+              src="assets/images/landscape_tiny.png"
+              onmouseover="this.src='assets/images/landscape.png'"
+              onmouseout="this.src='assets/images/landscape_tiny.png'" />
+          </td>
+          <td>
+            <img
+              src="assets/images/landscape_tiny.png"
+              onmouseover="this.src='assets/images/landscape.png'"
+              onmouseout="this.src='assets/images/landscape_tiny.png'" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="assets/images/landscape_tiny.png"
+              onmouseover="this.src='assets/images/landscape.png'"
+              onmouseout="this.src='assets/images/landscape_tiny.png'" />
+          </td>
+          <td>
+            <img
+              src="assets/images/landscape_tiny.png"
+              onmouseover="this.src='assets/images/landscape.png'"
+              onmouseout="this.src='assets/images/landscape_tiny.png'" />
+          </td>
+        </tr>
+      </table>
+    </main>
+
+    <!-- insert standard footer -->
+    <embed type="text/html" src="assets/resources/footer.html" width="100%" />
+  </body>
+</html>

@@ -3,6 +3,10 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+h1 {
+	color : green;
+}
+
 /* Style <pre> with a slightly larger font size */
 pre {
   font-size: large;
