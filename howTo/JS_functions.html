@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- insert standard <head></head> -->
+    <embed type="text/html" src="/assets/resources/head.html" height="0px" />
+    <style></style>
+
+    <!-- JavaScript code  -->
+    <script>
+      /* function to square a number */
+      function squareIt(x) {
+        window.alert(x * x);
+      }
+
+      /* function to cube a number */
+      function cubeIt(x) {
+        window.alert(x * x * x);
+      }
+
+      /* function to calculate average  */
+      function average(x, y, z) {
+        window.alert((x + y + z) / 3);
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- insert standard header -->
+    <embed type="text/html" src="assets/resources/header.html" width="100%" />
+
+    <main>
+      <h1>Simple JavaScript Functions</h1>
+
+      <script>
+        x = 5;
+        y = 6;
+        z = 8;
+
+        document.write("<p>x = " + x + "</p>");
+        document.write("<p>y = " + y + "</p>");
+        document.write("<p>z = " + z + "</p>");
+      </script>
+
+      <p>Click the buttons below</p>
+
+      <!-- send an alert message when button is clicked -->
+      <input type="button" onclick="squareIt(x)" value="Square(x)" />
+      <input type="button" onclick="cubeIt(y)" value="Cube(y)" />
+      <input
+        type="button"
+        onclick="average(x, y, z )"
+        value="Average( x,y,z)" />
+    </main>
+
+    <!-- insert standard footer -->
+    <embed type="text/html" src="assets/resources/footer.html" width="100%" />
+  </body>
+</html>
