@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+    <title>Komal's Code Craft</title>
+
+    <style>
+      #canvas {
+        margin: 10px;
+        padding: 10px;
+        background: palegoldenrod;
+        border: thick inset #aaaaaa;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- insert standard header -->
+    <embed type="text/html" src="assets/resources/header.html" width="100%" />
+
+    <main>
+      <h1>Hello Canvas World</h1>
+      <h3>Create a simple 600px by 300px canvas area</h3>
+
+      <code> &lt;canvas width="600" height="300"&gt;&lt/canvas&gt; </code>
+
+      <p>
+        The canvas size is defined in pixels. Each pixal is accessed using
+        co-ordinates.
+      </p>
+      <ul>
+        <li>top left corner is at (0,0)</li>
+        <li>top right corner is at (600,0)</li>
+        <li>bottom left corner is at (0, 300)</li>
+        <li>bottom right corner is at (600,300)</li>
+      </ul>
+
+      <p>
+        The X, Y and Z have a font size of 48px. We need to take this in to
+        account when position text on the canvas
+      </p>
+
+      <ul>
+        <li>To position X in the top left we need (1,48)</li>
+        <li>To position Y in the center we need (252,152)</li>
+        <li>To position Z in the bottom right we need (552, 300)</li>
+      </ul>
+
+      <canvas id="canvas" width="600" height="300">Canvas not supported</canvas>
+    </main>
+
+    <!-- insert standard footer -->
+    <embed type="text/html" src="assets/resources/footer.html" width="100%" />
+
+    <script>
+      var canvas = document.getElementById("canvas");
+      context = canvas.getContext("2d");
+
+      /* set the font styling */
+      context.font = "48pt Ariel";
+      context.fillStyle = "cornflowerblue";
+      context.strokeStyle = "blue";
+
+      /* write X in the top left corner */
+      context.fillText("X", 1, 48);
+      context.strokeText("X", 1, 48);
+
+      /* write Y in the centre */
+      context.fillText("Y", 252, 152);
+      context.strokeText("Y", 252, 152);
+
+      /* write something within the canvas */
+      context.fillText("Z", 552, 300);
+      context.strokeText("Z", 552, 300);
+    </script>
+  </body>
+</html>
