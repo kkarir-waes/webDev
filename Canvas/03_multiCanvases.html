@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+    <title>Komal's Code Craft</title>
+
+    <style>
+      .canvas {
+        border: thick inset #aaaaaa;
+      }
+
+      #canvasA {
+        background: rgb(181, 167, 23);
+      }
+
+      #canvasB {
+        background: rgb(7, 91, 18);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- insert standard header -->
+    <embed type="text/html" src="assets/resources/header.html" width="100%" />
+
+    <main>
+      <h1>Multiple Canvases</h1>
+
+      <p>Two canves, each has its own unique HTML ID attribute.</p>
+      <canvas class="canvas" id="canvasA" width="600" height="400"
+        >Canvas not supported</canvas
+      >
+
+      <canvas class="canvas" id="canvasB" width="600" height="400"
+        >Canvas not supported</canvas
+      >
+    </main>
+
+    <!-- insert standard footer -->
+    <embed type="text/html" src="assets/resources/footer.html" width="100%" />
+
+    <!-- code for drawing to the canvas -->
+    <script src="03_multiCanvases.js"></script>
+  </body>
+</html>

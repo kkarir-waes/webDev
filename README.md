@@ -12,6 +12,10 @@ Enjoy!
 
 <hr>
 
+## Canvas
+
+Introduction to HTML Canvas for drawing simple graphics. This could be the start of your game development journey!
+
 ## How-To
 
 Folder of code snippets showing basic code to do a particular thing.

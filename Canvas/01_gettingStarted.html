@@ -9,8 +9,6 @@
 
     <style>
       #canvas {
-        margin: 10px;
-        padding: 10px;
         background: palegoldenrod;
         border: thick inset #aaaaaa;
       }
@@ -44,7 +42,7 @@
       </p>
 
       <ul>
-        <li>To position X in the top left we need (1,48)</li>
+        <li>To position X in the top left we need (0,48)</li>
         <li>To position Y in the center we need (252,152)</li>
         <li>To position Z in the bottom right we need (552, 300)</li>
       </ul>
@@ -55,26 +53,7 @@
     <!-- insert standard footer -->
     <embed type="text/html" src="assets/resources/footer.html" width="100%" />
 
-    <script>
-      var canvas = document.getElementById("canvas");
-      context = canvas.getContext("2d");
-
-      /* set the font styling */
-      context.font = "48pt Ariel";
-      context.fillStyle = "cornflowerblue";
-      context.strokeStyle = "blue";
-
-      /* write X in the top left corner */
-      context.fillText("X", 1, 48);
-      context.strokeText("X", 1, 48);
-
-      /* write Y in the centre */
-      context.fillText("Y", 252, 152);
-      context.strokeText("Y", 252, 152);
-
-      /* write something within the canvas */
-      context.fillText("Z", 552, 300);
-      context.strokeText("Z", 552, 300);
-    </script>
+    <!-- code for drawing to the canvas -->
+    <script src="01_gettingStarted.js"></script>
   </body>
 </html>
