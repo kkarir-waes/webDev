@@ -43,7 +43,17 @@ function drawLine(color, xPosFrom, yPosFrom, xPosTo, yPosTo, width, cap) {
 function drawCircle(color, xPos, yPos, radius, width) {
   ctx.beginPath();
   ctx.strokeStyle = color;
-  ctx.arc(xPos, yPos, radius, 0, 2 * Math.PI);
+  ctx.arc(xPos, yPos, radius, 0, 2 * Math.PI); /* x, y, r, start, end */
+  ctx.lineWidth = width;
+  ctx.stroke();
+
+  /* reset defaults  */
+  resetDefaults();
+}
+function drawArc(color, xPos, yPos, radius, angle, width) {
+  ctx.beginPath();
+  ctx.strokeStyle = color;
+  ctx.arc(xPos, yPos, radius, 0, angle * Math.PI); /* x, y, r, start, end */
   ctx.lineWidth = width;
   ctx.stroke();
 
@@ -86,6 +96,13 @@ drawCircle(BLUE, 400, 225, 65, 5);
 drawCircle(RED, 400, 100, 50, 2);
 drawCircle(GREEN, 450, 100, 50, 2);
 drawCircle(BLUE, 500, 100, 50, 2);
+
+/* draw some arcs (color, xPos, yPos, radius, angle, width)*/
+drawArc(RED, 50, 200, 20, 0, 2);
+drawArc(GREEN, 50, 200, 30, 0.5, 2);
+drawArc(BLUE, 50, 200, 40, 1, 2);
+drawArc(GREEN, 50, 200, 50, 1.5, 2);
+drawArc(RED, 50, 200, 50, 2, 2);
 
 /* draw some rectangles (color, xPos, yPos, width, height) */
 drawRectangle(RED, 0, 0, 50, 50);
