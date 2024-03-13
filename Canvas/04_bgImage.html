@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+    <title>Komal's Code Craft</title>
+
+    <style>
+      #canvas {
+        border: thick inset #aaaaaa;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- insert standard header -->
+    <embed type="text/html" src="assets/resources/header.html" width="100%" />
+
+    <main>
+      <h1>Using Background Image</h1>
+
+      <p>This is the image using HTML mode.</p>
+      <img id="bgImage" src="assets/images/landscape.PNG" />
+
+      <p>
+        This is the image drawn 3 times, at different positions in the canvas,
+        and reducing by 90% each time.
+      </p>
+      <canvas id="canvas" width="600" height="400">Canvas not supported</canvas>
+    </main>
+
+    <!-- insert standard footer -->
+    <embed type="text/html" src="assets/resources/footer.html" width="100%" />
+
+    <!-- code for drawing to the canvas -->
+    <script src="04_bgImage.js"></script>
+  </body>
+</html>
