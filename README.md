@@ -34,4 +34,5 @@ This is a folder of code being developed and tested. It may or may not work as e
 This contains simple games to demonstrate canvas play-areas, event handlers, key handlers etc
 
 <hr />
+
 **Enjoy!**
