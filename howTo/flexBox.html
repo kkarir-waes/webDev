@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+    <title>Komal's Code Craft</title>
+
+    <style>
+      .flex-container {
+        display: flex;
+        background-color: DodgerBlue;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .flex-container > div {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 10px;
+        font-size: 150px;
+        flex-basis: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- insert standard header -->
+    <embed type="text/html" src="assets/resources/header.html" width="100%" />
+
+    <h1>Pop-up Alert Message</h1>
+
+    <main>
+      <p>
+        A Flexible Layout must have a parent container with
+        <code>display :flex</code>
+      </p>
+
+      <p>
+        Direct child element of the flexible container automatically become
+        flexible items.
+      </p>
+
+      <p>Resize the window and see the <code>DIVs</code> move.</p>
+      <div class="flex-container">
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+        <div>four</div>
+        <div>five</div>
+        <div>six</div>
+        <div>seven</div>
+      </div>
+    </main>
+
+    <!-- insert standard footer -->
+    <embed type="text/html" src="assets/resources/footer.html" width="100%" />
+  </body>
+</html>
